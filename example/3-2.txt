@@ -1,0 +1,3 @@
+$ uvicorn 3-1:app --reload --port 3030
+$ http -b localhost:3030/hi  # only body
+$ http -v localhost:3030/hi  # verbose

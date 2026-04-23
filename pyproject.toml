@@ -1,0 +1,27 @@
+[project]
+name = "fastapi-oreilly"
+version = "0.1.0"
+description = "Learning FastAPI from O'reilly'"
+readme = "README.md"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+  "fastapi[standard]>=0.135.2",
+  "pwdlib[argon2]>=0.3.0",
+  "pyjwt[crypto]>=2.12.1",
+]
+
+[dependency-groups]
+dev = [
+  "pre-commit>=4.5.1",
+  "pytest>=9.0.3",
+  "pytest-cov>=7.1.0",
+  "pytest-plugins>=3.0.1",
+  "ruff>=0.15.8",
+  "ty>=0.0.29",
+]
+
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.lint]
+extend-select = ["E501"]
